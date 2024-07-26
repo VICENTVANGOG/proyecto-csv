@@ -10,16 +10,16 @@
     <section class="container">
         <div class="row">
             <div class="col">
-                <h1>CSv File uploader</h1>
+                <h1>CSV File Uploader</h1>
             </div>
         </div>
         <!-- Form area -->
         <div class="row">
             <div class="col-4">
                 <form action="" id="csvForm">
-                    <div class="mb3">
-                        <label for="">CSV File</label>
-                        <input type="file" class="form-control" id="csvFile" accept=".csv,.txt">
+                    <div class="mb-3">
+                        <label for="csvFile" class="form-label">CSV File</label>
+                        <input type="file" name="csv" class="form-control" id="csvFile" accept=".csv,.txt">
                     </div>
                     <div class="mb-3">
                         <input type="submit" class="btn btn-primary" value="Submit">
@@ -33,17 +33,18 @@
                 <div class="mb-3">
                     <label for="searchInput" class="form-label">Search</label>
                     <input type="text" class="form-control" id="searchInput" placeholder="Search...">
-                    
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="col">
-                <!-- file area -->
+                <!-- File area -->
                 <div id="displayArea"></div>
                 <nav id="paginationControlls" class="d-flex justify-content-center"></nav>
             </div>
         </div>
     </section>
+    <!-- Ensure this script is loaded after the DOM is ready -->
+    <script type="module" src="../../components/index.js"></script>
 </body>
 </html>
