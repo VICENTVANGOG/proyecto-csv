@@ -1,4 +1,4 @@
-import {DataTable} from "../models/models";
+import {DataTable} from "../models/models.js";
 
 export async function renderTable(arrayTable: DataTable, currentPage: number, recordsPerPage: number): Promise<string>  {
    /*Index Start and end*/
@@ -21,9 +21,9 @@ export async function renderTable(arrayTable: DataTable, currentPage: number, re
     <tbody>
         ${paginatedData.map(row=>`
             <tr>
-            ${columnName.map(columnName=>`
-            <td>${row[columnName] || ''}</td>
-            `)}
+                ${columnName.map(columnName=>`
+                <td>${row[columnName]|| ''}</td>
+                `).join('')}
             <tr>`).join('')}
     </tbody>
     </table>

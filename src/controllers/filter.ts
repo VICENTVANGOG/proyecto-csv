@@ -1,4 +1,4 @@
-import { DataTable} from "../models/models";
+import { DataTable} from "../models/models.js";
 
 export function filterData(
     arrayTable: DataTable,
