@@ -1,4 +1,4 @@
-import { DataRow, ColumnName } from "../models/models";
+import { DataRow, ColumnName } from "../models/models.js";
 
 export async function convertCsv(data: DataRow[], columnNames: ColumnName): Promise<string>{
     const csvRows=[];
